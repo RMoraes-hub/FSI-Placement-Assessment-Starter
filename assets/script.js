@@ -26,6 +26,7 @@ if (gb <= 0){
 gb = gb - 1
 let quantityText = document.getElementById('qty-gb')
 quantityText.innerHTML = gb
+document.getElementById("qty-total").innerHTML =+ gb + cc + sugar
 })
 
 upButtonGG.addEventListener("click", function(){
@@ -33,6 +34,7 @@ upButtonGG.addEventListener("click", function(){
    gb = gb + 1
    let quantityText = document.getElementById ("qty-gb")
    quantityText.innerHTML = gb
+   document.getElementById("qty-total").innerHTML =+ gb + cc + sugar
 })
 
 //reference the buttons for chocolate chips //
@@ -50,6 +52,7 @@ downButtonCC.addEventListener("click", function(){
     cc = cc - 1
    let quantityText = document.getElementById ("qty-cc")
    quantityText.innerHTML = cc
+   document.getElementById("qty-total").innerHTML =+ gb + cc + sugar
 })
 
 upButtonCC.addEventListener("click", function(){
@@ -57,12 +60,14 @@ upButtonCC.addEventListener("click", function(){
    cc = cc + 1
    let quantityText = document.getElementById ("qty-cc")
    quantityText.innerHTML = cc
+   document.getElementById("qty-total").innerHTML =+ gb + cc + sugar
 })
 
 //reference the buttons for Sugar sprinkles //
 
 let upButtonSS = document.querySelector("#add-sugar")
 let downButtonSS = document.querySelector("#minus-sugar")
+
 
 // register listeners for when buttons are clicked for chocolate chips//
 
@@ -73,6 +78,7 @@ downButtonSS.addEventListener ("click", function (){
       sugar = sugar - 1
       let quantityText = document.getElementById ("qty-sugar")
       quantityText.innerHTML = sugar
+      document.getElementById("qty-total").innerHTML =+ gb + cc + sugar
 })
 
 upButtonSS.addEventListener ("click",function (){
@@ -80,6 +86,7 @@ upButtonSS.addEventListener ("click",function (){
    sugar = sugar + 1
    let quantityText =document.getElementById ("qty-sugar")
    quantityText.innerHTML = sugar
+   document.getElementById("qty-total").innerHTML =+ gb + cc + sugar
 })
 
 
@@ -103,7 +110,8 @@ upButtonSS.addEventListener ("click",function (){
       var.addNumbers
       function.add ("gb", "cc", "sugar") {let.result = gb + cc+ sugar}
       */ 
-      document.getElementById('qty-total').innerHTML =+ gb +cc + sugar
+     
+     document.getElementById("qty-total").innerHTML =+ gb + cc + sugar
    
       
 // selecting the element with an id of credit
