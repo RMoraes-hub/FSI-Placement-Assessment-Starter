@@ -49,7 +49,7 @@ downButtonCC.addEventListener("click", function(){
     return }
     cc = cc - 1
    let quantityText = document.getElementById ("qty-cc")
-   quantityText = document.innerHTML = cc
+   quantityText.innerHTML = cc
 })
 
 upButtonCC.addEventListener("click", function(){
