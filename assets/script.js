@@ -70,7 +70,7 @@ downButtonSS.addEventListener ("click", function (){
    if (sugar <= 0) { 
       window.alert ("You cannot go negative!") 
       return  }
-      Sugar = Sugar - 1
+      sugar = sugar - 1
       let quantityText = document.getElementById ("qty-sugar")
       quantityText.innerHTML = sugar
 })
@@ -85,25 +85,27 @@ upButtonSS.addEventListener ("click",function (){
 
 //Add the toal number of orders//
 
-/*   <tfoot>
+/*   All trials and errots 
+<tfoot>
                     <tr>
                         <th>Total</th>
                         <th id="qty-total">0</th>
-                    </tr>
-
-
-
-
+                    </tr
                     
-    var.addNumberr(  function addNumbers()
+    var.addNumberr(  function add (gb,cc,sugar)
                     {
-                       var val1 = parseInt(document.getElementById("qty-gb").value);
-                       var val2 = parseInt(document.getElementById("qty-cc").value);
-                       var val3 = parseint (document.getElementById ("qty-sugar").value);
-                       var ansD = document.getElementById("qty-total");
-                       ansD.value = val1 + val2;                
+                         var.addNumberr(  function addNumbers()
+
+      var gb = document.getElementById("qty-gb").value;
+      var cc = document.getElementById("qty-cc").value;
+      var sugar = document.getElementById ("qty-sugar").value;
+      var added = parseInt(gb) + parseInt(cc) + parseInt ("sugar");           
       var.addNumbers
-      */
+      function.add ("gb", "cc", "sugar") {let.result = gb + cc+ sugar}
+      */ 
+      document.getElementById('qty-total').innerHTML =+ gb +cc + sugar
+   
+      
 // selecting the element with an id of credit
 const credit = document.querySelector('#credit')
 // selecting the element with an id of add-gb
